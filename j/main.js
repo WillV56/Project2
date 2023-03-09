@@ -14,8 +14,17 @@ function init() {
 
     slides[0].classList.remove("hide");
 
+    frame.forEach((frame) => {
+        frame.classList.add("hide");
+    });
+
+    frame[0].classList.remove("hide");
+
     next_btn.addEventListener("click", changeSlide);
     back_btn.addEventListener("click", changeSlide);
+
+    anext_btn.addEventListener("click", changeAlbum);
+    aback_btn.addEventListener("click", changeAlbum);
 }
 
 function changeSlide(e) {
@@ -57,6 +66,8 @@ function changeSlide(e) {
     caption.innerText = altText;
 }
 
-// function changeAlbum(albumName) {
+function changeAlbum(albumName) {
 
-// }
+
+
+}
