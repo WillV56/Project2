@@ -56,7 +56,3 @@ function changeSlide(e) {
    
     caption.innerText = altText;
 }
-
-// function changeAlbum(albumName) {
-
-// }
